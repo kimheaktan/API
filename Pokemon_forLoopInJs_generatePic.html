@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    function generateImage() {
+      var imgSrc = "http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png";
+      var imgg = document.createElement('img');
+      imgg.src = imgSrc;
+      
+      return imgg;
+    }
+    function generateImage1() {
+      var imgSrc1 = "http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png";
+      var img = document.createElement('img');
+      img.src = imgSrc1;
+      
+      return img;
+    }
+    function generateImage3() {
+      var imgSrc3 = "http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png";
+      var img = document.createElement('img');
+      img.src = imgSrc3;
+      
+      return img;
+    }
+    function generateImage4() {
+      var imgSrc4 = "http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png";
+      var img = document.createElement('img');
+      img.src = imgSrc4;
+      
+      return img;
+    }
+    function generateImage5() {
+      var imgSrc5 = "http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png";
+      var img = document.createElement('img');
+      img.src = imgSrc5;
+      
+      return img;
+    }
+
+for (var i = 0; i < 38; i++ ) {
+  // document.body.appendChild(generateImage());
+  //the above line is raw JS
+
+  //OR
+  //using jQuery
+  $("body").append(generateImage(),generateImage1(),generateImage3(),generateImage4(),generateImage5());
+}
+  </script>
+</body>
+</html>
